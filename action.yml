@@ -1,11 +1,13 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'SSH Known Hosts Action'
+description: 'Adds entries to the known_hosts file'
+author: 'TrueMark'
 inputs:
-  milliseconds: # change this
-    required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+  entries:
+    required: false
+    description: 'Entries to add to the known_hosts file'
+  scan-hosts:
+    required: false
+    description: 'Hosts to scan for SSH keys'
 runs:
   using: 'node16'
   main: 'dist/index.js'
