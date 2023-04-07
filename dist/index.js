@@ -137,6 +137,7 @@ function run() {
             const stream = fs.createWriteStream(knownHostsFile, { flags: 'a', encoding: 'utf8' });
             stream.write(entries.join('\n'));
             stream.end('\n');
+            console.log(`Wrote ${entries.length} entries to ${knownHostsFile}`);
         }
         catch (error) {
             if (error instanceof Error)
