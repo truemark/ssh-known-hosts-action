@@ -48,7 +48,7 @@ export interface Config {
 
 export function loadConfig(): Config {
   return {
-    entries: optionalArray(getInput('entries')) ?? [],
-    scanHosts: optionalArray(getInput('scan-hosts')) ?? []
+    entries: optionalArray(getInput('entries'), ',') ?? [],
+    scanHosts: optionalArray(getInput('scan-hosts'), ',') ?? []
   }
 }

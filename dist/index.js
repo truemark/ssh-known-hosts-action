@@ -62,8 +62,8 @@ exports.requiredValues = requiredValues;
 function loadConfig() {
     var _a, _b;
     return {
-        entries: (_a = optionalArray((0, core_1.getInput)('entries'))) !== null && _a !== void 0 ? _a : [],
-        scanHosts: (_b = optionalArray((0, core_1.getInput)('scan-hosts'))) !== null && _b !== void 0 ? _b : []
+        entries: (_a = optionalArray((0, core_1.getInput)('entries'), ',')) !== null && _a !== void 0 ? _a : [],
+        scanHosts: (_b = optionalArray((0, core_1.getInput)('scan-hosts'), ',')) !== null && _b !== void 0 ? _b : []
     };
 }
 exports.loadConfig = loadConfig;
