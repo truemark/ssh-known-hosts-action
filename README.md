@@ -13,7 +13,7 @@ GitHub action used to update the ssh known_hosts file
 ```yml
       - name: SSH Known Hosts
         id: ssh-known-hosts
-        uses: truemark/ssh-known-hosts-action@49024048b5d8b2f76d7861d57538011838b67743
+        uses: truemark/ssh-known-hosts-action@v1
         with:
           scan-hosts: ${{ steps.ec2-describe-arm64.outputs.public-dns-name }},${{ steps.ec2-describe-amd64.outputs.public-dns-name }}
 ```
