@@ -1,6 +1,9 @@
 name: 'SSH Known Hosts Action'
 description: 'Adds entries to the known_hosts file'
 author: 'TrueMark'
+branding:
+  icon: 'check-circle'
+  color: 'red'
 inputs:
   entries:
     required: false
