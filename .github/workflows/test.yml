@@ -34,7 +34,7 @@ jobs:
         uses: truemark/generate-ssh-key-action@v2
       - name: Setup instance
         id: instance
-        uses: truemark/aws-ec2-run-instance-action@v4
+        uses: truemark/aws-ec2-run-instance-action@v5
         with:
           security-group-id: "${{ vars.SECURITY_GROUP_ID }}"
           subnet-id: "${{ vars.SUBNET_ID }}"
